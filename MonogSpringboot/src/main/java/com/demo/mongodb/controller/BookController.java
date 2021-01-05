@@ -32,7 +32,7 @@ public class BookController {
 		System.out.println("Name: "+name+"  Author Name : "+authorName);
 		if (name!= null) {
 			System.out.println("Inside name");
-			return bservice.getName(name);
+			return bservice.getName(name);	
 		} else if (authorName != null) {
 			System.out.println("Inside authorName");
 			return bservice.getAuthorName(authorName);			
@@ -49,5 +49,10 @@ public class BookController {
 	@DeleteMapping("/delete/{id}")
 	public String deleteBook(@PathVariable Integer id) {
 		return bservice.deleteBook(id);
+	}
+	
+	@DeleteMapping("/deleten/{name}")
+	public String deleteBookname(@PathVariable String name) {
+		return bservice.deleteBookname(name);
 	}
 }

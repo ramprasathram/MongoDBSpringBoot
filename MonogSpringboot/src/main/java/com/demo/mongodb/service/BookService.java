@@ -45,4 +45,8 @@ public class BookService {
 		return brepsitory.findByAuthorName(authorName);
 	}
 
+	public String deleteBookname(String name) {
+		brepsitory.deleteByBookName(name);		
+		return "Book Delete with Bookname :"+name;
+	}
 }

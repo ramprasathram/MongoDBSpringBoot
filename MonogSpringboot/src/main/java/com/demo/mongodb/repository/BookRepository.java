@@ -15,4 +15,6 @@ public interface BookRepository extends MongoRepository<Book, Integer>{
 
 	Stream<Book> findByAuthorName(String authorName);
 
+	void deleteByBookName(String name);
+
 }
