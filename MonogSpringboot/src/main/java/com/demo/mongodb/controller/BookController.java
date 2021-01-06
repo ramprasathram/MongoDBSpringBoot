@@ -36,6 +36,7 @@ public class BookController {
 			return bservice.getName(name);
 		} else if (authorName != null) {
 			System.out.println("Inside authorName");
+			System.out.println("Enter into Elseblock");
 			return bservice.getAuthorName(authorName);			
 		} else {
 			System.out.println("Insdie Else");
