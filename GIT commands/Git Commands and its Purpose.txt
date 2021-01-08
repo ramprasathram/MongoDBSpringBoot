@@ -1,0 +1,40 @@
+git init - initialise the git repository
+
+git remote add origin "path"
+
+git pull origin master  - pull files from the specified repository
+ 
+git status - shows the newly added files and changes, which are yet to commit
+
+git add "filename / path" - will add the files in the index
+git add -A - add all the changes files and folders in a single shot
+
+git commit -m "new folder repo added" - used to commit the changes with commit message
+git commit -a -m "commit msg" - to commit all the files in a single shot
+
+git log - display the log of commits 
+
+git branch branchname - creates new branch from master branch
+
+git checkout branchname - checkout all the code from master branch to newbranch
+
+ls - list the files
+
+git checkout branchname - used to switch between branches as well
+
+git merge branchName - used to merge the changes in ths branch to master branch, For that the origin should be the master branch
+
+cat filename - shows the content in the file
+
+git pull and git fetch diff: pull directly pulls the files and merged in master repository, where as fetch, pulls all the files and stores in seperate branch in local repository. If we use fetch, we have to merge the changes to master repository.
+
+git rebase branchname - used to merge the changes, same as git merge.
+ 
+git merge and git rebase - both used to merge the changes
+
+ssh-keygen - used to generate the ssh key
+
+ssh -T git@path - to authenticate the ssh key
+
+git push origin branchName - used to push that particular branch to central git hub repository
+
